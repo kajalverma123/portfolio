@@ -1,0 +1,13 @@
+.rotatingAvatar {
+  display: inline-block;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.rotated {
+  transform: rotate(-12deg);
+}
+
+.unrotated {
+  transform: rotate(0deg);
+}

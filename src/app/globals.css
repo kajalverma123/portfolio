@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap');
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.cta-large {
+  min-width: 160px;
+  min-height: 44px;
+}
+
+@media (max-width: 640px) {
+  .cta-large {
+    min-height: 48px;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@400;800&display=swap');
+
+.geist-heading {
+  font-family: 'Geist', 'Montserrat', 'Inter', 'Roboto', Arial, sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+.geist-heading-bold {
+  font-family: 'Geist', 'Montserrat', 'Inter', 'Roboto', Arial, sans-serif;
+  font-weight: 800;
+}
+.modern-heading {
+  font-family: 'Montserrat', 'Inter', 'Roboto', Arial, sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+.modern-heading-bold {
+  font-family: 'Montserrat', 'Inter', 'Roboto', Arial, sans-serif;
+  font-weight: 800;
+}
+.cement-text {
+  color: #a3a3a3;
+}
+.white-text {
+  color: #fff;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url('/fonts/roboto/Pacifico,Roboto/Roboto/Roboto-VariableFont_wdth,wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Pacifico';
+  src: url('/fonts/Pacifico/Pacifico-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+.work-pacifico-gradient {
+  font-family: 'Pacifico', cursive;
+  font-weight: 400;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+.varela-round {
+  font-family: 'Varela Round', Arial, sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+.work-lobster-gradient {
+  font-family: 'Lobster', cursive;
+  font-weight: 400;
+  font-size: 1.2em;
+  background: linear-gradient(90deg, #5f2eea 40%, #ff2e9a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  letter-spacing: 0.5px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Italiana&display=swap');
+
+.curated-serif {
+  font-family: 'Roboto', 'Playfair Display', serif;
+  font-weight: 700;
+}
+.work-italic-gradient {
+  font-family: 'Italiana', cursive;
+  font-style: italic;
+  font-weight: 400;
+  background: linear-gradient(90deg, #5f2eea 40%, #ff2e9a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+.handwriting-modern {
+  font-family: 'Great Vibes', cursive;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+.c-icon {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.java-icon {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.footer-brand-inter {
+  font-family: 'Inter', sans-serif;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/inter/Inter[opsz,wght].ttf') format('truetype');
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/montserrat/Montserrat[wght].ttf') format('truetype');
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --background: 255 255 255;
+    --foreground: 0 0 0;
+    --primary: 0 0 0;
+    --primary-foreground: 255 255 255;
+    --secondary: 255 255 255;
+    --secondary-foreground: 0 0 0;
+    --muted: 245 245 245;
+    --muted-foreground: 100 100 100;
+    --accent: 0 0 0;
+    --accent-foreground: 255 255 255;
+    --border: 229 229 229;
+    --input: 229 229 229;
+    --ring: 0 0 0;
+    --card: 255 255 255;
+    --card-foreground: 0 0 0;
+    --popover: 255 255 255;
+    --popover-foreground: 0 0 0;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 0 0 0;
+    --foreground: 255 255 255;
+    --primary: 255 255 255;
+    --primary-foreground: 0 0 0;
+    --secondary: 0 0 0;
+    --secondary-foreground: 255 255 255;
+    --muted: 26 26 26;
+    --muted-foreground: 155 155 155;
+    --accent: 255 255 255;
+    --accent-foreground: 0 0 0;
+    --border: 42 42 42;
+    --input: 42 42 42;
+    --ring: 255 255 255;
+    --card: 0 0 0;
+    --card-foreground: 255 255 255;
+    --popover: 0 0 0;
+    --popover-foreground: 255 255 255;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-gray-200;
+  }
+  body {
+    @apply bg-white text-black;
+  }
+}
+
+@keyframes gradient {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes glow {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient 8s ease infinite;
+}
+
+.animate-glow {
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+::selection {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.dark ::selection {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 768px) {
+  html {
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  body {
+    overflow-x: hidden;
+  }
+}
+
+.btn-hover {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.btn-hover::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.1), transparent);
+  transition: left 0.5s ease;
+}
+
+.dark .btn-hover::before {
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+}
+
+.btn-hover:hover::before {
+  left: 100%;
+}
+
+.hexagon-avatar {
+  clip-path: ellipse(70% 50% at 50% 50%);
+}
